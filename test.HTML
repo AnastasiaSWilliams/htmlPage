@@ -6,8 +6,23 @@
     <title>Document Title</title>
 </head>
 <body>
-    <h1>Media Gallery Page</h1>
-    <h3>Create a webpage showcasing:</h3>
+    <h1>Anastasia Williams</h1>
+    <h4>Logo:</h4>
+    <img src="MusicNotesPic.jpg" alt="Music Notes" width="360" height="360"> 
+    <p></p>
+    
+    <blockquote cite="Gandalf">
+      What do you mean? Do you wish me a good morning, or mean that it is a good morning whether I want it or not; or that you feel good this morning; or that it is a morning to be good on?
+    </blockquote> 
+
+    <nav>
+      <a href="#reqs">Requirements</a> |
+      <a href="#implementation">Implementation</a> |
+    </nav> 
+
+    <article>
+    <h3 id="reqs">Create a webpage showcasing: </h3>
+    Multimedia and Embedded Content
     <ul>
         <li>An img for a photo gallery. </li>
         <li>A video with multiple source options for different formats. </li>
@@ -15,36 +30,87 @@
         <li>An iframe embedding a YouTube video.</li>
         <li>Optionally, include a canvas or svg for a simple graphic or animation.</li>
     </ul>
-    <h4>Image:</h4>
-    <img src="MusicNotesPic.jpg" alt="Music Notes" width="360" height="360"> 
-    <p></p>
+
+<p>Sectioning and Structure
+  
+  <ul>
+      <li>A header containing your name and a logo.</li>
+      <li>A nav with links to different sections (e.g., "About," "Projects," "Contact").</li>
+      <li>A main section containing article>s for each project.</li>
+      <li>An aside for supplementary information like hobbies or skills.</li> 
+      <li>A footer with contact details.</li>  
+  </ul>
+   
+  
+  Text <mark>Formatting</mark> and Grouping
+  <ul>
+      <li>A blockquote for a quote.</li>
+      <li>Highlighted keywords using mark.</li>
+      <li>A figure with an image and figcaption.</li>
+      <li>A time tag for the post’s publication date.</li>
+      <li> <code>code</code> for inline code snippets or technical terms.</li>
+  </ul>
+  </p>
+</article>
+
+  <h3 id="implementation">Implementation:</h3>
+    <article id="video and aside">
     <h4>Video:</h4>
     <video width="320" height="240" controls>
         <source src="GraceVideo.mp4" type="video/mp4">
         <source src="GraceVideo.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video> 
-    
+    </article>
+    <aside><br>
+    <p>This is a video my then 4 year old little sister took after wandering off with my mom's phone.</p>
+    </aside>
+
+    <article id="audio">
     <h4><br>Audio:</h4>
     <audio controls>
         <source src="beethoven-moonlight-sonata-1-movement-op-27.wav" type="audio/wav">
         Your browser does not support the audio tag.
       </audio> 
-
+    </article>
+    
+    <article id="youtube video">
     <h4><br>iFrame:</h4>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-wMUSWbOEM4?si=Hld0RpLYHwjoAgMR" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    </article>
+    
+    <article id="canvas">
     <h4><br>Canvas:</h4>
     <canvas id="myCanvas">
       Your browser does not support the canvas tag.
-      </canvas>
+    </canvas>
+    </article>
+    
+    <canvas id="myCanvas2"></canvas>
       
       <script>
       let canvas = document.getElementById("myCanvas");
       let ctx = canvas.getContext("2d");
       ctx.fillStyle = "#CA00CA";
-      ctx.fillRect(0, 0, 500, 600);
+      ctx.fillRect(0, 0, 200, 300);
       </script> 
+      <script>
+        let canvas2 = document.getElementById("myCanvas2");
+        let ctx2 = canvas2.getContext("2d");
+        ctx2.fillStyle = "#0A00CA";
+        ctx2.fillRect(0, 0, 100, 100);
+      </script> 
+
+  <figure>
+    <img src="MusicNotesPic.jpg" alt="music notes" style="width:100%">
+    <figcaption>Musical Notes in large</figcaption>
+  </figure> 
+
+  <footer>
+    <p>Contact Information:</p>
+    <p><a>awilliams009@student.franciscan.edu</a></p>
+    <p>Last edited <time datetime="2025-02-3 21:30">yesterday</time>.</p>
+  </footer> 
 
   </body>
 </html>
